@@ -1,0 +1,69 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw", 
+        {
+            "@language": "en"
+        }
+    ], 
+    "dc:bibliographicCitation ": "Bernard Comrie. 2013. Alignment of Case Marking of Pronouns.\nIn: Dryer, Matthew S. & Haspelmath, Martin (eds.)\nThe World Atlas of Language Structures Online.\nLeipzig: Max Planck Institute for Evolutionary Anthropology.\n(Available online at http://wals.info/chapter/99, Accessed on 2016-06-23.)\n", 
+    "dc:creator": "Bernard Comrie", 
+    "dc:format": "cldf-1.0", 
+    "dc:identifier": "http://wals.info/chapter/99", 
+    "dc:isPartOf": "http://wals.info/", 
+    "dc:issued": "2013-08-15", 
+    "dc:license": "http://creativecommons.org/licenses/by/4.0/", 
+    "dc:publisher": "Max Planck Institute for Evolutionary Anthropology, Leipzig", 
+    "dc:title": "Alignment of Case Marking of Pronouns", 
+    "dcat:accessURL": "http://wals.info/download", 
+    "dialect": {
+        "header": true, 
+        "delimiter": ",", 
+        "encoding": "utf-8"
+    }, 
+    "tables": [
+        {
+            "url": "wals-chapter-99.csv", 
+            "dc:type": "cldf-values", 
+            "tableSchema": {
+                "aboutUrl": "http://wals.info/values/{ID}", 
+                "primaryKey": "ID", 
+                "columns": [
+                    {
+                        "datatype": "string", 
+                        "name": "ID"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Language_ID", 
+                        "valueUrl": "http://wals.info/languoid/lect/wals_code_{Language_ID}"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Language_name"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Parameter_ID", 
+                        "valueUrl": "http://wals.info/feature/{Parameter_ID}"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Parameter_name"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Value"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Source"
+                    }, 
+                    {
+                        "datatype": "string", 
+                        "name": "Comment"
+                    }
+                ]
+            }
+        }
+    ]
+}
