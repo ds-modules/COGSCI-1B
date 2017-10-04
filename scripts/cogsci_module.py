@@ -39,5 +39,5 @@ def overlay_hex(x_values, y_values):
 def drop_and_subset(column, df, desired):
     lst = desired.copy()
     lst.append(column)
-    intermediate = combined.dropna(subset=[column])
+    intermediate = df.dropna(subset=[column])
     return intermediate[lst].copy()
