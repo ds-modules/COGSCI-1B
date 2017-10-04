@@ -10,3 +10,6 @@ PHOIBLE is a database of phonological inventories and distinctive features, enco
 - The documentation is at http://phoible.github.io. This includes notational conventions, departures from official IPA usage, citation information, etc. If you have a question about PHOIBLE, chances are you should seek answers there first.
 
 _All of these sites should be considered works-in-progress._ The “published” form of the data is the most stable.
+
+
+**phoible_elevation.csv** was originally phoible-aggregated.tsv, but had the commas taken out of the population column, and had an elevation column added. The elevation data came from Google Maps elevation, and the code for those API calls can be seen [here](https://gist.github.com/TomPiona/81f62fdbf9e23eebd08211191e87d48c).
